@@ -1,0 +1,52 @@
+#include <iostream>
+using namespace std;
+
+int x,y,z, i,j,l;
+
+int entrada(){
+	cin >> x >> y >> z;
+	return(x,y,z);
+}
+
+int ord(){
+	if(x<y && y<z){
+		i = x;
+		j = y;
+		l = z;
+	}else if(x<z && z<y){
+		i = x;
+		j = z;
+		l = y;
+	}else if(y<x && x<z){
+		i = y;
+		j = x;
+		l = z;
+	}else if(y<z && z<x){
+		i = y;
+		j = z;
+		l = x;
+	}else if(z<x && x<y){
+		i = z;
+		j = x;
+		l = y;
+	}else if(z<y && y<x){
+		i = z;
+		j = y;
+		l = x;
+	}
+	return(i,j,l);
+}
+
+void saida(){
+	cout << i << "\n" << j << "\n" << l << "\n\n";
+    cout << x << "\n";
+	cout << y << "\n";
+	cout << z << endl;	
+}
+
+int main(){
+	entrada();
+	ord();
+	saida();
+	return 0;
+}

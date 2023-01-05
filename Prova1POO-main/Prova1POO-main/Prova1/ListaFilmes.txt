@@ -1,0 +1,3 @@
+1011; Matrix; Ação; Um jovem programador é atormentado por estranhos pesadelos nos quais sempre está conectado por cabos a um imenso sistema de computadores do futuro.
+1001; Deadpool; Comédia; "Wade Wilson é um ex-agente especial que passou a trabalhar como mercenário.
+1100; Shrek; Comédia; Era uma vez um pântano distante, onde vivia um ogro chamado Shrek.

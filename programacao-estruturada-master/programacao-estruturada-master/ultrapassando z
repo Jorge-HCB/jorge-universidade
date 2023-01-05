@@ -1,0 +1,46 @@
+#include <iostream>
+ 
+using namespace std;
+
+int X, Z, i, j, cont=1;
+
+int entrada1(){
+	cin >> X;
+	return (X);
+}
+
+int entrada2(){
+	cin >> Z;
+	return (Z);
+} 
+
+int exe(){
+	if(X*2+1 > Z){
+		cont++;
+	}else{
+		j = X;
+		while(j <= Z){
+		j =j+X+1;
+		X++;
+		cont++;
+	}
+	}
+	
+	return (cont);
+} 
+
+void saida(){
+		cout << cont << endl;
+}
+
+int main() {
+    entrada1();
+    entrada2();
+    while(Z <= X){
+    	entrada2();
+	}
+	exe();
+	saida();
+ 
+    return 0;
+}

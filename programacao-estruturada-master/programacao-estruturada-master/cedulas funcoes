@@ -1,0 +1,60 @@
+#include <iostream>
+using namespace std;
+
+int n, v, v100=0, v50=0, v20=0, v10=0, v5=0, v2=0, v1=0;
+
+int entrada(){
+	cin >> v;
+	return(v);
+}
+
+int org(){
+	n = v;
+	while(v>=100){
+   	v100++;
+   	v-=100;
+   }
+   while(v>=50){
+   	v50++;
+   	v-=50;
+   }
+   while(v>=20){
+   	v20++;
+   	v-=20;
+   }
+   while(v>=10){
+   	v10++;
+   	v-=10;
+   }
+   while(v>=5){
+   	v5++;
+   	v-=5;
+   }
+   while(v>=2){
+   	v2++;
+   	v-=2;
+   }
+   while(v>=1){
+   	v1++;
+   	v--;
+   }
+   return(v100,v50,v20,v10,v5,v2,v1,n);
+}
+
+void saida(){
+	cout << n << endl;
+	cout << v100 << " nota(s) de R$ 100,00" << endl;
+    cout << v50 << " nota(s) de R$ 50,00" << endl;
+    cout << v20 << " nota(s) de R$ 20,00" << endl;
+    cout << v10 << " nota(s) de R$ 10,00" << endl;
+    cout << v5 << " nota(s) de R$ 5,00" << endl;
+    cout << v2 << " nota(s) de R$ 2,00" << endl;
+    cout << v1 << " nota(s) de R$ 1,00" << endl;
+}
+
+int main(){
+	entrada();
+	org();
+	saida();
+	return 0;
+}

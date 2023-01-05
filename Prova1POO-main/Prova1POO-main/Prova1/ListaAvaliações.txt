@@ -1,0 +1,9 @@
+10011; Jorge; 4; Bom
+10011; Felipe; 5; Excelente
+10011; Jorge; 3; Não entendi o final
+1001; Caio; 3; Mais ou menos
+1001; Jorge; 5; "Filme família
+1001; Igor; 1; Filme fraco
+1100; Jorge; 5; "Assista esse filme em alemão
+1100; Paulo; 3; Protagonista feio
+1100; Lucas; 2; Filme pra criança

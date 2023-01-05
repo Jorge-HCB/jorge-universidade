@@ -1,0 +1,52 @@
+#include <iostream>
+using namespace std;
+
+string a,b,c, res;
+
+string entrada(){
+	cin >> a >> b >> c;
+	return(a,b,c);
+}
+
+string identidade(){
+	 if (a == "vertebrado") {
+        if (b == "ave") {
+            if (c == "carnivoro")
+                res = "aguia";
+            else
+                res = "pomba";
+        }
+        else {
+            if (c == "onivoro")
+                res = "homem";
+            else
+                res = "vaca";
+        }
+    }
+    else {
+        if (b == "inseto") {
+            if (c == "hematofago")
+                res = "pulga";
+            else
+                res = "lagarta";
+        }
+        else {
+            if (c == "hematofago")
+                res = "sanguessuga";
+            else
+                res = "minhoca";
+        }
+    }
+    return(res);
+}
+
+void saida(){
+	cout << res << endl;
+}
+
+int main(){
+	entrada();
+	identidade();
+	saida();
+	return 0;
+}

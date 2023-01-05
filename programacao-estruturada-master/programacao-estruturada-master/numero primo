@@ -1,0 +1,45 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int N, X, c=0, res, t=1;
+
+int entrada1(){
+	cin >> N;	
+	return (N);
+}
+
+int entrada2(){
+	cin >> X;
+	return (X);
+}
+
+int primo(){
+		res = 0;
+		for(t=1; t <= sqrt(X); t++){
+		if(X % t == 0 ){
+	        res++;
+		}
+	    } 
+	return(res);
+	}
+
+void saida(){
+	if(res > 1){
+		cout << X << " nao eh primo" << endl;
+	}else{
+		cout << X << " eh primo" << endl;
+	}
+	
+}
+
+int main(){
+    entrada1();
+    for(c=0; c < N; c++){
+    	entrada2();
+		primo();
+		saida();
+	}     
+    return 0;
+}

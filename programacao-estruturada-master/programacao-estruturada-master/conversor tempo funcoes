@@ -1,0 +1,28 @@
+#include <iostream>
+ 
+using namespace std;
+
+int n,h,m,s;
+
+int entrada(){
+	cin >> n;
+	return(n);
+}
+
+int tempo(){	
+    h = n / 3600;
+    m = (n % 3600) / 60;
+    s = n % 60;
+    return(h,m,s);
+}
+
+void saida(){
+	cout << h << ":" << m << ":" << s << endl;
+}
+
+int main(){
+	entrada();
+	tempo();
+	saida();
+    return 0;
+}
